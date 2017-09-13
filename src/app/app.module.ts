@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -5,12 +6,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { PagePage } from "../pages/page/page";
+import { ChoixAction2Page } from "../pages/choix-action2/choix-action2";
+import { ChoixActionPage } from "../pages/choix-action/choix-action";
+import { PhotosPage } from "../pages/photos/photos";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    PagePage,
+    LoginPage,
+    ChoixActionPage,
+    ChoixAction2Page,
+    PhotosPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +27,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    PagePage,
+    LoginPage,
+    ChoixActionPage,
+    ChoixAction2Page,
+    PhotosPage
   ],
   providers: [
     StatusBar,

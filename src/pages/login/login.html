@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <form id="login-form2">
+    <ion-list id="login-list1">
+      <ion-item id="login-input3">
+        <ion-label>
+          Adresse Ip du serveur
+        </ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="login-input5">
+        <ion-label>Nom d'utilisateur</ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="login-input4">
+        <ion-label>
+          Password
+        </ion-label>
+        <ion-input type="password" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="height:40px;" id="login-spacer1"></div>
+    <button id="login-button1" (click)="login()" ion-button color="stable" block>
+      Log in
+    </button>
+  </form>
+</ion-content>
