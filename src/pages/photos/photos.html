@@ -5,4 +5,13 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page5"></ion-content>
+<ion-content padding id="page5">
+  <!--<ion-img src="cdvphotolibrary://photo?photoId=285%3B%2Fstorage%2Femulated%2F0%2FDCIM%2FCamera%2FIMG_20170327_103633.jpg"></ion-img>-->
+
+  <ion-card *ngFor="let data of library">
+
+    <!--<ion-img src="{{data.photoURL}}"></ion-img>-->
+  <img [src]="data.photoURL|safeUrl" />
+
+</ion-card>
+</ion-content>
